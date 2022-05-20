@@ -1,4 +1,4 @@
-# Exercise--Gitgub User List
+# Exercise--Github User List
 
 I spent 8 hours on this case. 
 
