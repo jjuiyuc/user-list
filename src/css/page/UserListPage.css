@@ -1,0 +1,18 @@
+@import "../main.css";
+.list-container {
+    width: 90%;
+    /* margin: 0 auto 60px; */
+    color: #575757ee;
+}
+.list-title {
+    color: #575757ee;
+    text-align: center;
+}
+.card-group-container {
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+p {
+    padding-left: 18px;
+}
