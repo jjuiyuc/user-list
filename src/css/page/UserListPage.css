@@ -13,6 +13,9 @@
     align-items: center;
     padding-left: 20px;
 }
+.error{
+    color: #ed0707ee;
+}
 p {
     padding-left: 18px;
 }
