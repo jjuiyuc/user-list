@@ -3,17 +3,24 @@ import UserCard from "../component/UserCard"
 import AxiosInstance from "../utils/api"
 import "../css/page/UserListPage.css"
 
-const UserListPage = () => {
-  const [userList, setUserList] = useState([]),
-    [error, setError] = useState(null)
+export default function UserListPage() {
+  const
+    [userList, setUserList] = useState([]),
+    [error, setError] = useState(null),
+    [requestData, setRequestData] = useState(true)
 
   useEffect(() => {
+    if (!requestData) return
+
+    setError(null)
+    setRequestData(false)
+
     AxiosInstance.get(`/users?per_page=100&since=0`)
-      .then((res) => {
-        setUserList(res.data)
+      .then((response) => {
+        setUserList(response.data || [])
       })
-      .catch((error) => setError(error))
-  }, [])
+      .catch(error => setError(error))
+  }, [requestData])
 
   return (
     <div className="list-container">
@@ -47,4 +54,4 @@ const UserListPage = () => {
   )
 }
 
-export default UserListPage
+
