@@ -1,9 +1,7 @@
+
 # Exercise--Github User List
 
-I spent 8 hours on this case. 
-
-
-
+[GitHub User List Demo](https://jjuiyuc.github.io/user-list)
 
 
 
